@@ -1,0 +1,395 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wheather-app-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.today-wheather {
+  background-color: #1E213A;
+  width: 25%;
+  height: 100vh;
+  text-align: center;
+  padding: 0px 15px;
+}
+
+.today-wheather .active {
+  -webkit-animation: slideIn 0.4s forwards;
+          animation: slideIn 0.4s forwards;
+}
+
+.today-wheather .dissmiss {
+  -webkit-animation: slideOut 0.4s forwards;
+          animation: slideOut 0.4s forwards;
+}
+
+.today-wheather .search-by-location {
+  background-color: #1E213A;
+  height: 100vh;
+  position: fixed;
+  width: 25%;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  padding: 20px 45px;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.today-wheather .search-by-location .box-close {
+  text-align: right;
+  margin-bottom: 30px;
+}
+
+.today-wheather .search-by-location .box-close img {
+  width: 17px;
+  height: 17px;
+}
+
+.today-wheather .search-by-location .search-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.today-wheather .search-by-location .search-form input[type="text"] {
+  border: 1px solid #E7E7EB;
+  background-color: #1E213A;
+  padding: 12px 10px;
+  font-size: 16px;
+  outline: none;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+}
+
+.today-wheather .search-by-location .search-form input[type="button"] {
+  background-color: #3C47E9;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  padding: 0px 12px;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+}
+
+.today-wheather .search-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 50px;
+}
+
+.today-wheather .search-bar .search-city {
+  background-color: #6E707A;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  padding: 8px 10px;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  cursor: pointer;
+}
+
+.today-wheather .search-bar .current-location {
+  background-color: #6E707A;
+  outline: none;
+  border: none;
+  padding: 4px 6px;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  border-radius: 50%;
+}
+
+.today-wheather .wheather-img {
+  margin-top: 50px;
+}
+
+.today-wheather .wheather-img img {
+  width: 140px;
+}
+
+.today-wheather .temperator {
+  margin-top: 60px;
+  color: #A09FB1;
+  font-size: 30px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.today-wheather .temperator span {
+  font-size: 100px;
+  color: #A09FB1;
+}
+
+.today-wheather .wheather-type {
+  margin-top: 40px;
+  color: #A09FB1;
+  font-size: 36px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.today-wheather .date {
+  margin-top: 40px;
+  font-size: 18px;
+  color: #A09FB1;
+  font-family: 'Raleway', sans-serif;
+}
+
+.today-wheather .location-name {
+  color: #A09FB1;
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+  margin-top: 40px;
+}
+
+.today-wheather .location-name p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fucture-wheather {
+  background-color: #100E1D;
+  height: 100vh;
+  width: 75%;
+  padding: 0px 10rem;
+}
+
+.fucture-wheather .celcius-feherenite {
+  text-align: right;
+  margin-top: 25px;
+}
+
+.fucture-wheather .celcius-feherenite .active {
+  background-color: #fff;
+  color: #585676;
+}
+
+.fucture-wheather .celcius-feherenite button {
+  background-color: #585676;
+  color: #fff;
+  font-size: 15px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+  border: none;
+}
+
+.fucture-wheather .five-days-forcast {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 40px;
+}
+
+.fucture-wheather .five-days-forcast .single-day {
+  background-color: #1E213A;
+  padding: 10px 8px;
+}
+
+.fucture-wheather .five-days-forcast .single-day .date {
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: 10px;
+}
+
+.fucture-wheather .five-days-forcast .single-day img {
+  width: 50px;
+  height: 50px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: block;
+  margin: auto;
+}
+
+.fucture-wheather .five-days-forcast .single-day .min-max {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.fucture-wheather .five-days-forcast .single-day .min-max p {
+  margin: 0px 8px;
+}
+
+.fucture-wheather .todays-hilight {
+  margin-top: 40px;
+}
+
+.fucture-wheather .todays-hilight h3 {
+  font-size: 24px;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+}
+
+.fucture-wheather .todays-hilight .hilight-info-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 25px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.fucture-wheather .todays-hilight .hilight-info-container .hilight-box {
+  background-color: #1E213A;
+  padding: 10px 25px;
+  color: #fff;
+  text-align: center;
+  width: 45%;
+  margin-bottom: 25px;
+}
+
+.fucture-wheather .todays-hilight .hilight-info-container .hilight-box .progress-count {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.fucture-wheather .todays-hilight .hilight-info-container .hilight-box .progress {
+  width: 100%;
+  background-color: #fff;
+  height: 10px;
+  border-radius: 10px;
+}
+
+.fucture-wheather .todays-hilight .hilight-info-container .hilight-box .progress span {
+  background: #FFEC65;
+  height: 10px;
+  display: block;
+  border-radius: 10px;
+}
+
+.fucture-wheather .todays-hilight .hilight-info-container .hilight-box img {
+  width: 15px;
+  -webkit-transform: rotate(164deg);
+          transform: rotate(164deg);
+  margin-right: 10px;
+}
+
+.fucture-wheather .todays-hilight .hilight-info-container .hilight-box p {
+  font-family: 'Raleway', sans-serif;
+  margin: 10px 0px;
+}
+
+.fucture-wheather .todays-hilight .hilight-info-container .hilight-box p strong {
+  font-size: 55px;
+}
+
+.fucture-wheather .todays-hilight .hilight-info-container .hilight-box p:nth-child(2) {
+  font-size: 40px;
+}
+
+@-webkit-keyframes slideIn {
+  from {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  to {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  to {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes slideOut {
+  from {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  to {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@keyframes slideOut {
+  from {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  to {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .wheather-app-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .wheather-app-wrap .today-wheather {
+    width: 100%;
+  }
+  .wheather-app-wrap .today-wheather .search-by-location {
+    width: 100%;
+  }
+  .wheather-app-wrap .fucture-wheather {
+    width: 100%;
+    padding: 0px 2rem;
+    height: unset;
+  }
+  .wheather-app-wrap .fucture-wheather .five-days-forcast {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .wheather-app-wrap .fucture-wheather .five-days-forcast .single-day {
+    width: 48%;
+    margin-bottom: 20px;
+    padding: 30px 8px;
+  }
+  .wheather-app-wrap .fucture-wheather .hilight-info-container .hilight-box {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
